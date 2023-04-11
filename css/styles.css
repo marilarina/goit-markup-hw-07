@@ -753,4 +753,11 @@ img {
 .subscribe-icon {
     padding: 0;
 }
+.js-menu-container.is-hidden {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 50;
+}
 */

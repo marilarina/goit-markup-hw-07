@@ -231,4 +231,19 @@
 .subscribe-btn {
     margin: 16px 0;
 }
+.js-menu-container.is-hidden {
+    position: fixed;
+    visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+       z-index: 50;
 }
+}
+ @media screen and (min-device-pixel-ratio: 2) and (max-width: 1199px),
+ screen and (min-resolution: 192dpi) and (max-width: 1199px),
+ screen and (min-resolution: 2dppx) and (max-width: 1199px) {
+     .hero {
+         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+             url(../images/Hero/hero-tablet@2x.jpg);
+     }
+ }

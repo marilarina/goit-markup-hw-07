@@ -39,7 +39,7 @@
     
         .address-list {
             display: flex;
-            flex-direction: row-reverse;
+            justify-content: space-between;
             margin-left: auto;
             font-style: normal;
         }
@@ -515,7 +515,7 @@
             text-align: center;
             background: var(--substrate-color);
             gap: 24px;
-            margin-top: 0;
+            margin-top: 72px;
         }
     
         .card-name {
@@ -696,10 +696,15 @@
     
         .footer {
             background: var(--title-color);
-            padding: 100px 0;
+            padding: 0;
+            margin: 0;
         }
-    
+        .footer-first {
+            margin-right: 0;
+        } 
         .logo-footer {
+            display: block;
+           text-align: left;
             font-family: 'Raleway';
             font-weight: 800;
             font-size: 18px;
@@ -707,6 +712,7 @@
             letter-spacing: 0.03em;
             text-transform: uppercase;
             color: var(--logo-color);
+
         }
     
         .logo-second-footer {
@@ -714,7 +720,7 @@
         }
     
         .text-footer {
-            width: 264px;
+            max-width: 264px;
             font-size: 16px;
             line-height: 1.5;
             letter-spacing: 0.02em;
@@ -723,12 +729,17 @@
         }
     
         .footer-container {
+            max-width: 1158px;
             display: flex;
             align-items: center;
+            /*padding: 100px 0;*/
         }
-    
+        
         .footer-second {
+           
             margin-left: 120px;
+            margin-right: 0;
+            text-align: left;
         }
     
         .footer-title {
@@ -768,18 +779,23 @@
         }
     
         .footer-third {
+            max-width: 453px;
             margin-top: 0;
+            margin-right: 0;
             margin-left: 80px;
             padding: 0;
+            text-align: left;
             
         }
         .footer-third .footer-title {
             margin-bottom: 16px;
+            
         }
         .subscribe-set {
             display: flex;
             justify-content: space-between;
-            margin-top: 0;
+            align-items: center;
+            margin-top: 16px;
             margin-bottom: 32px;
             gap: 24px;
         }
@@ -787,7 +803,7 @@
         .subscribe-input {
             min-width: 264px;
             height: 40px;
-            margin-bottom: 32px;
+            margin: 0;
             padding: 8px 16px;
             border: 1px solid var(--hero-color);
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -806,7 +822,7 @@
             justify-content: center;
             align-items: center;
             height: 40px;
-            margin-bottom: 0;
+            margin: 0;
             padding: 8px 24px;
             gap: 16px;
             font-weight: 500;
@@ -834,4 +850,19 @@
         .subscribe-icon {
             padding: 0;
         }
+        .js-menu-container.is-hidden {
+            position: fixed;
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+            z-index: 50;
+        }
 }
+ @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+ screen and (min-resolution: 192dpi) and (min-width: 1200px),
+ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+     .hero {
+         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+             url(../images/Hero/hero-desktop@2x.jpg);
+     }
+ }
