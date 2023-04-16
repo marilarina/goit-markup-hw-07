@@ -1,37 +1,10 @@
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
     .container {
         max-width: 768px;
     }
-        .header {
-            border-bottom: 1px solid var(--accent-color);
-            box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-        }
-    
-        .header > .container {
-            display: flex;
-            justify-content: space-between;
-        }
-    
         .nav {
             display: flex;
-        }
-    
-        .header-logo {
-            font-family: 'Raleway';
-            font-size: 18px;
-            font-weight: 800;
-            line-height: 1.33;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-            color: var(--logo-color);
-            margin-left: 0;
-            padding-top: 24px;
-            padding-bottom: 24px;
-        }
-    
-        .logo-second-header {
-            color: var(--title-color);
         }
     
         .menu-nav {
@@ -105,14 +78,17 @@
         .header-btn {
             display: none;
         }
-   
+        .js-menu-container {
+            display: none;
+        }        
     .hero-container {
             max-width: 768px;
             padding-top: 112px;
             padding-bottom: 112px;
             color: var(--hero-color);
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Hero/hero-tablet.jpg);
-            }
+            background-size: cover;    
+        }
         .hero-title {
             max-width: 496px;
             margin-left: auto;
@@ -124,13 +100,14 @@
             letter-spacing: 0.02em;
             text-transform: capitalize;
              }
-       
-             
-    .about {
-        padding-top: 96px;
-        padding-bottom: 96px;
+        .hero-btn {
+            margin-top: 36px;
+        }     
+        .about {
+            padding-top: 96px;
+            padding-bottom: 96px;
         
-    }
+             }
     .about-list {
      display: flex;
      flex-wrap: wrap;
@@ -146,11 +123,18 @@
     .about-item >.item-subtitle {
         text-align: left;
     }
-.team-cards .container {
+        .about-icon {
+            display: none;
+        }
+        .examples {
+          display: none;
+        }
+.team-cards > .container {
     padding: 0 108px;
 }  
 .team-cards .subtitle {
     margin-bottom: 72px;
+    text-align: center;
 }
 .card {
     max-width: 768px;
@@ -158,12 +142,13 @@
     flex-wrap: wrap;
     gap: 24px;
     margin-top: -64px;
+    text-align: center;
 }
-.list-item {
+.card-item {
     flex-basis: calc((100% - 24px) /2);
     margin-top: 64px;
-     
 }
+
 .customers {
     padding: 96px 0;
 }
@@ -175,25 +160,25 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 0;
+    margin-left: -24px;
+    
     justify-content: space-between;
 }
 
 .customers-logo-item {
-    flex-basis: calc((100% - 48px) /3);
+    flex-basis: calc((100% / 3) - 24px);
     margin-top: 72px;
-    margin-left: 16px;
-    width: 190px;
+    margin-left: 24px;
+    width: 168px;
 }
 
-.customers-logo-item:not( :first-child) {
-    margin-left: 16px;
-}
 .footer {
-    padding: 96px 108px;
+    padding: 96px 0;
 }
 .footer-container {
     display: flex;
     flex-wrap: wrap;
+    padding: 0 108px;
     
 }
 .footer-first {
@@ -227,9 +212,10 @@
 }
 .subscribe-input {
     min-width: 264px;
+    height: 40px;
 }
 .subscribe-btn {
-    margin: 16px 0;
+    margin: 0;
 }
 .js-menu-container.is-hidden {
     position: fixed;
