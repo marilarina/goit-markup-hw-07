@@ -134,14 +134,18 @@
     margin-top: 48px;
     margin-bottom: 40px;
   }
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Hero/hero-mobile.jpg);
+    background-size: cover;
+  }
   .hero-container {
     max-width: 480px;
     padding-top: 112px;
     padding-bottom: 112px;
     text-align: center;
     color: var(--hero-color);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Hero/hero-mobile.jpg);
-    background-size: cover;
+    /*background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Hero/hero-mobile.jpg);
+    background-size: cover;*/
   }
   
   .hero-title {
@@ -159,7 +163,7 @@
     .hero-btn {
        margin-top: 36px;
     }
-   /*.backdrop {
+   .backdrop {
           position: fixed;
           top: 0;
           left: 0;
@@ -256,9 +260,9 @@
           font-style: normal;
           font-weight: 400;
           font-size: 12px;
-          line-height: 14px;*/
+          line-height: 14px;
           
-          /* identical to box height *//*
+          /* identical to box height */
            letter-spacing: 0.01em;
         color: #8E8F99;
     }
@@ -313,8 +317,8 @@
         margin-bottom: 4px;
         font-weight: 400;
         font-size: 12px;
-        line-height: 14px;*/
-          /* identical to box height *//*
+        line-height: 14px;
+          /* identical to box height */
           letter-spacing: 0.01em;
         color: #8E8F99;
     }
@@ -367,7 +371,7 @@
     .submit-btn:focus {
         background: var(--activebutton-background);
         color: var(--hero-color);
-    }*/
+    }
    
   .about {
     padding-top: 0;

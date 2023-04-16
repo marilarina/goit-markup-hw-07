@@ -80,13 +80,17 @@
         }
         .js-menu-container {
             display: none;
-        }        
-    .hero-container {
+        }    
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Hero/hero-tablet.jpg);
+            background-size: cover;
+        }    
+        .hero-container {
             max-width: 768px;
             padding-top: 112px;
             padding-bottom: 112px;
             color: var(--hero-color);
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Hero/hero-tablet.jpg);
+            
             background-size: cover;    
         }
         .hero-title {
@@ -102,7 +106,10 @@
              }
         .hero-btn {
             margin-top: 36px;
-        }     
+        }    
+        .modal {
+            min-width: 408px;
+        } 
         .about {
             padding-top: 96px;
             padding-bottom: 96px;
