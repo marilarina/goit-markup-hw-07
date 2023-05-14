@@ -82,16 +82,14 @@
             display: none;
         }    
         .hero {
+            padding: 112px 0 ;
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Hero/hero-tablet.jpg);
             background-size: cover;
         }    
         .hero-container {
             max-width: 768px;
-            padding-top: 112px;
-            padding-bottom: 112px;
             color: var(--hero-color);
-            
-            background-size: cover;    
+              
         }
         .hero-title {
             max-width: 496px;
@@ -109,23 +107,32 @@
         }    
         .modal {
             min-width: 408px;
+            padding: 24px;
         } 
+        .order-form {
+            max-width: 360px;
+            margin: 48px auto 0;
+        }  
+        .submit-btn {
+            margin: 24px auto 0;
+        }
         .about {
-            padding-top: 96px;
-            padding-bottom: 96px;
-        
+            padding: 96px 0;
              }
     .about-list {
      display: flex;
      flex-wrap: wrap;
      justify-content: space-between; 
-     margin-top: -72px;    
+     row-gap: 72px;
+     column-gap: 24px;   
     }
-    .about-list > .about-item {
-     margin-top: 72px;
-     padding: 0;
+     .about-item {
+       padding: 0;
      flex-basis: calc((100% - 24px)/ 2);
     
+    }
+    .about-item:not(:first-child) {
+        margin-top: 0;
     }
     .about-item >.item-subtitle {
         text-align: left;
@@ -137,25 +144,32 @@
           display: none;
         }
 .team-cards > .container {
-    padding: 0 108px;
+    margin: 0 auto;
 }  
 .team-cards .subtitle {
-    margin-bottom: 72px;
+    margin-bottom: 0;
     text-align: center;
 }
 .card {
-    max-width: 768px;
+    max-width: 576px;
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
-    margin-top: -64px;
+    margin: 72px auto 0;
+   justify-content: space-between;
     text-align: center;
+    row-gap: 64px;
+    column-gap: 24px;
 }
 .card-item {
-    flex-basis: calc((100% - 24px) /2);
-    margin-top: 64px;
+    max-width: 264px;
+    flex-basis: calc((100% / 2) - 24px);
+    margin-top: 0;
 }
 
+.card-item:not(:first-child) {
+   
+    margin-top: 0;
+}
 .customers {
     padding: 96px 0;
 }
@@ -166,16 +180,16 @@
     max-width: 552px;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 0;
-    margin-left: -24px;
-    
+    row-gap: 72px ;
+    column-gap: 24px;
     justify-content: space-between;
+    margin-top: 72px;
 }
 
 .customers-logo-item {
     flex-basis: calc((100% / 3) - 24px);
-    margin-top: 72px;
-    margin-left: 24px;
+    margin-top: 0;
+    margin-left: 0;
     width: 168px;
 }
 
@@ -214,6 +228,7 @@
 .subscribe-set {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 16px;
     gap: 24px;
 }
