@@ -137,10 +137,10 @@
         .modal {
             position: absolute;
             min-width: 408px;
-            min-height: 584px;
+           max-height: 100vh;
             left: 50%;
             top: 50%;
-            padding: 24px;
+            padding: 72px 16px 24px;
             transform: translate(-50%, -50%);
             background: #FCFCFC;
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -150,7 +150,7 @@
     
         .order-form {
             max-width: 360px;
-            margin: 48px auto 0;
+           
         }
     
         .subtitle {
@@ -191,8 +191,10 @@
                     color: var(--title-color);
                 }
         .about-icon {
-            display: block;
-            padding: 24px 100px;
+            height: 112px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin-bottom: 8px;
             border-radius: 4px;
             background-color: var(--substrate-color);
@@ -281,7 +283,7 @@
             
         }
         .team-cards .container {
-            padding: 0;
+            padding: 0 15px;
 
         }
         .card {
@@ -442,9 +444,7 @@
             padding: 100px 0;
             margin: 0;
         }
-        .footer-first {
-            margin-right: 120px;
-        } 
+        
         .logo-footer {
             display: block;
            text-align: left;
@@ -472,14 +472,15 @@
         }
     
         .footer-container {
-            max-width: 1158px;
+            max-width: 1128px;
             display: flex;
             align-items: center;
             margin: 0 auto;
+            padding: 0 15px;
         }
         
         .footer-second {
-            margin: 0;
+            margin: 0 auto 0 120px;
             text-align: left;
         }
     
@@ -500,10 +501,8 @@
         }
     
         .footer-third {
-            max-width: 453px;
-            margin-top: 0;
-            margin-right: 0;
-            margin-left: 80px;
+          
+            margin: 0 auto 0 0;
             padding: 0;
             text-align: left;
             
